@@ -618,7 +618,7 @@ export default function Home() {
             </a>
           </div>
           <div className="order-1 md:order-2">
-            <img src={OLD_TOWN_IMG}"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Commercial_Historic_District_%28Cottonwood%2C_Arizona%29.jpg/1280px-Commercial_Historic_District_%28Cottonwood%2C_Arizona%29.jpg" alt="Old Town Cottonwood at night" className="rounded-2xl shadow-lg w-full h-96 object-cover" />
+            <img src={OLD_TOWN_IMG} alt="Old Town Cottonwood at night" className="rounded-2xl shadow-lg w-full h-96 object-cover" />
             <p className="font-body text-xs text-muted-foreground text-center mt-2 italic">Old Town Cottonwood — vibrant by day and night</p>
           </div>
         </div>
