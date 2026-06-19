@@ -21,7 +21,8 @@ const LIVING2_IMG = "/manus-storage/living2_bd04710b.jpg";
 // AI-generated hero & area images
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/hero_cottonwood-ngDTPLCBpsJZ9HWGrPnM7i.webp";
 const WINE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/wine_hero-nyov3UfMdGjvNJb66jU2g7.webp";
-const LOGO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/logo_leaf-HynqRxiYfspggDLe2yEaFh.webp";
+const LOGO_IMG = "/manus-storage/grapevine_logo_6db8a5da.webp";
+const PARKING_IMG = "/manus-storage/parking_diagram_b9fe7adb.webp";
 const JEROME_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/jerome_hero-jXuxaBZ3VYDRKtoG9RjTFA.webp";
 const OLD_TOWN_IMG = "/manus-storage/old_town_night_47c680c5.jpg";
 const VERDE_VINEYARD_IMG = "/manus-storage/verde_valley_vineyard_fcf1d2e5.jpg";
@@ -215,10 +216,7 @@ export default function Home() {
       }`}>
         <div className="container flex items-center justify-between h-16">
           <button onClick={() => scrollTo("property")} className="flex items-center gap-2">
-            <img src={LOGO_IMG} alt="Cottonwood Leaf" className="w-8 h-8 object-contain" />
-            <span className={`font-display text-base font-semibold transition-colors ${scrolled ? "text-foreground" : "text-white"}`}>
-              609 W Fir St
-            </span>
+            <img src={LOGO_IMG} alt="Grapevine Stays" className="h-9 w-auto object-contain" style={{filter: scrolled ? 'none' : 'brightness(0) invert(1)'}} />
           </button>
 
           {/* Desktop nav */}
@@ -363,6 +361,18 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Parking Diagram */}
+        <div className="mt-12 bg-sand rounded-2xl border border-border p-6">
+          <h3 className="font-display text-xl font-semibold text-foreground mb-2">Parking</h3>
+          <p className="font-body text-sm text-muted-foreground mb-4">
+            Two dedicated parking spots are available on the property. Please use the white-outlined spaces at the top of the driveway as shown in the diagram below.
+          </p>
+          <div className="rounded-xl overflow-hidden border border-border">
+            <img src={PARKING_IMG} alt="Parking diagram for 609 W Fir St" className="w-full object-cover" style={{maxHeight: '420px', objectPosition: 'center'}} />
+          </div>
+          <p className="font-body text-xs text-muted-foreground text-center mt-2 italic">Your two dedicated spots are the white-outlined spaces at the top of the driveway.</p>
         </div>
       </Section>
 
@@ -585,6 +595,8 @@ export default function Home() {
               { name: "Crema Craft Kitchen & Bar", type: "Breakfast / Brunch", note: "Cottonwood's most beloved breakfast spot — expect a line on weekends. Worth every minute." },
               { name: "Old Town Red Rooster Cafe", type: "Lunch / Casual", note: "Charming local cafe perfect for a relaxed lunch in the heart of Old Town." },
               { name: "Nic's Italian Steak & Crab House", type: "Dinner / Upscale", note: "A throwback fine dining experience with exceptional steaks and fresh seafood." },
+              { name: "Whitehouse Wood Fired Grill", type: "Dinner / Wood-Fired", note: "Artisan wood-fired dishes in a warm, rustic setting — a local favorite for dinner." },
+              { name: "Eden", type: "Dinner / Farm-to-Table", note: "Seasonal, locally sourced menu in a beautiful garden setting. One of Cottonwood's most celebrated dining experiences." },
               { name: "Bing's Burger Station", type: "Casual / Burgers", note: "Classic burgers and milkshakes — a Cottonwood institution for a quick, satisfying meal." },
               { name: "Juanita's Mexican Food", type: "Mexican", note: "Authentic, no-frills Mexican food beloved by locals. Great value and generous portions." },
             ].map(d => <DiningCard key={d.name} {...d} />)}
@@ -597,6 +609,7 @@ export default function Home() {
               { name: "Da Vines Vineyard Bistro", type: "Wine + French Bistro", note: "Elegant French bistro menu paired with handcrafted Page Springs wines. Reservations recommended." },
               { name: "The Tavern Grille", type: "American / Gastropub", note: "A true gem in Old Town — hearty burgers, artisan pizzas, and vibrant salads with a modern touch." },
               { name: "Aqui Arizona Kitchen & Agave Bar", type: "Southwestern", note: "Creative Southwestern cuisine with an impressive agave spirits selection." },
+              { name: "DA Ranch", type: "Steakhouse / Western", note: "Classic Western steakhouse with hearty cuts and a true Arizona ranch atmosphere." },
               { name: "Adriana's Mexican Food", type: "Mexican", note: "Beloved local Mexican restaurant with authentic flavors and a warm, welcoming atmosphere." },
             ].map(d => <DiningCard key={d.name} {...d} />)}
           </div>
@@ -643,12 +656,9 @@ export default function Home() {
       {/* ── Footer ── */}
       <footer className="bg-charcoal text-white py-12">
         <div className="container text-center">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <img src={LOGO_IMG} alt="Cottonwood Leaf" className="w-10 h-10 object-contain opacity-90" />
-            <div>
-              <p className="font-display text-lg font-semibold">609 W Fir Street</p>
-              <p className="font-body text-xs text-white/60">Cottonwood, AZ 86326</p>
-            </div>
+          <div className="flex flex-col items-center gap-3 mb-4">
+            <img src={LOGO_IMG} alt="Grapevine Stays" className="h-14 w-auto object-contain" style={{filter: 'brightness(0) invert(1)', opacity: 0.85}} />
+            <p className="font-body text-xs text-white/60">609 W Fir Street · Cottonwood, AZ 86326</p>
           </div>
           <p className="font-body text-sm text-white/60 max-w-lg mx-auto leading-relaxed mb-6">
             We hope this guide helps you discover the magic of the Verde Valley. Pour yourself a glass, step outside, and savor every moment.
