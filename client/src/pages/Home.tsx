@@ -6,23 +6,24 @@ import {
 } from "lucide-react";
 
 /* ─── Asset URLs ─────────────────────────────────────────────────────────── */
+const P = import.meta.env.BASE_URL; // Vite base URL (/cottonwood-guide/ in prod)
 // Real Airbnb property photos
-const EXTERIOR_IMG = "/images/Photo_20260614015645_540ccb69-b174-41c8-9788-957ca829f986.jpg";
-const LIVING_ROOM_IMG = "/images/Photo_20260613232757_a07f6a05-18cd-4150-a266-48d2a6749789.jpg";
-const BEDROOM_IMG = "/images/Photo_20260607192651_34d8c326-53c2-4a78-953f-5e93a36138dc.jpg";
-const DINING_IMG = "/images/Photo_20260614000611_4dfeba9b-a4b7-447a-aab3-fb2b8e86aed4.jpg";
-const ENTRANCE_IMG = "/images/Photo_20260613234705_59dc0fef-5ae4-4fcf-813a-dbd63c4899cd.jpg";
-const KITCHEN_IMG = "/images/Photo_20260607225015_f7fc440e-0474-4017-94ae-b3197389ca61.jpg";
-const BEDROOM2_IMG = "/images/Photo_20260607222544_b646d956-cd01-4e4c-8eee-130cf2c0ccb8.jpg";
-const WORKSPACE_IMG = "/images/Photo_20260607193200_9888a411-a417-4ecd-b6ae-2b9a62e37a05.jpg";
-const OUTDOOR_IMG = "/images/Photo_20260607154835_ccaa59fb-a87b-4d76-9245-452e2eb240fd.jpg";
-const HOT_TUB_IMG = "/images/Photo_20260607154835_ccaa59fb-a87b-4d76-9245-452e2eb240fd.jpg";
-const LIVING2_IMG = "/images/Photo_20260607154835_ccaa59fb-a87b-4d76-9245-452e2eb240fd.jpg";
+const EXTERIOR_IMG = P + "images/Photo_20260614015645_540ccb69-b174-41c8-9788-957ca829f986.jpg";
+const LIVING_ROOM_IMG = P + "images/Photo_20260613232757_a07f6a05-18cd-4150-a266-48d2a6749789.jpg";
+const BEDROOM_IMG = P + "images/Photo_20260607192651_34d8c326-53c2-4a78-953f-5e93a36138dc.jpg";
+const DINING_IMG = P + "images/Photo_20260614000611_4dfeba9b-a4b7-447a-aab3-fb2b8e86aed4.jpg";
+const ENTRANCE_IMG = P + "images/Photo_20260613234705_59dc0fef-5ae4-4fcf-813a-dbd63c4899cd.jpg";
+const KITCHEN_IMG = P + "images/Photo_20260607225015_f7fc440e-0474-4017-94ae-b3197389ca61.jpg";
+const BEDROOM2_IMG = P + "images/Photo_20260607222544_b646d956-cd01-4e4c-8eee-130cf2c0ccb8.jpg";
+const WORKSPACE_IMG = P + "images/Photo_20260607193200_9888a411-a417-4ecd-b6ae-2b9a62e37a05.jpg";
+const OUTDOOR_IMG = P + "images/Photo_20260607154835_ccaa59fb-a87b-4d76-9245-452e2eb240fd.jpg";
+const HOT_TUB_IMG = P + "images/Photo_20260607154835_ccaa59fb-a87b-4d76-9245-452e2eb240fd.jpg";
+const LIVING2_IMG = P + "images/Photo_20260607154835_ccaa59fb-a87b-4d76-9245-452e2eb240fd.jpg";
 // AI-generated hero & area images
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/hero_cottonwood-ngDTPLCBpsJZ9HWGrPnM7i.webp";
 const WINE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/wine_hero-nyov3UfMdGjvNJb66jU2g7.webp";
-const LOGO_IMG = "/images/Grapevine_Logo.png";
-const PARKING_IMG = "/images/609_Cottonwood_Parking_Noaddress_Final2.png";
+const LOGO_IMG = P + "images/Grapevine_Logo.png";
+const PARKING_IMG = P + "images/609_Cottonwood_Parking_Noaddress_Final2.png";
 const JEROME_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/jerome_hero-jXuxaBZ3VYDRKtoG9RjTFA.webp";
 const OLD_TOWN_IMG = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Commercial_Historic_District_%28Cottonwood%2C_Arizona%29.jpg/1280px-Commercial_Historic_District_%28Cottonwood%2C_Arizona%29.jpg";
 const VERDE_VINEYARD_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/wine_hero-nyov3UfMdGjvNJb66jU2g7.webp";
