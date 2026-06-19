@@ -6,9 +6,21 @@ import {
 } from "lucide-react";
 
 /* ─── Asset URLs ─────────────────────────────────────────────────────────── */
+// Real Airbnb property photos
+const EXTERIOR_IMG = "/manus-storage/exterior_9ac9e552.jpg";
+const LIVING_ROOM_IMG = "/manus-storage/living_room_3aaec81d.jpg";
+const BEDROOM_IMG = "/manus-storage/bedroom_e2a7de55.jpg";
+const DINING_IMG = "/manus-storage/dining_e9384102.jpg";
+const ENTRANCE_IMG = "/manus-storage/entrance_b5500a70.jpg";
+const KITCHEN_IMG = "/manus-storage/kitchen_956ac5c0.jpg";
+const BEDROOM2_IMG = "/manus-storage/bedroom2_bb045380.jpg";
+const WORKSPACE_IMG = "/manus-storage/workspace_12b84bc8.jpg";
+const OUTDOOR_IMG = "/manus-storage/outdoor_8ea36dae.jpg";
+const HOT_TUB_IMG = "/manus-storage/hot_tub_eb7610e0.jpg";
+const LIVING2_IMG = "/manus-storage/living2_bd04710b.jpg";
+// AI-generated hero & area images
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/hero_cottonwood-ngDTPLCBpsJZ9HWGrPnM7i.webp";
 const WINE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/wine_hero-nyov3UfMdGjvNJb66jU2g7.webp";
-const PROPERTY_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/property_exterior-gBQvbNDV3mEAUCBySiJu8W.webp";
 const LOGO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/logo_leaf-HynqRxiYfspggDLe2yEaFh.webp";
 const JEROME_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/jerome_hero-jXuxaBZ3VYDRKtoG9RjTFA.webp";
 const OLD_TOWN_IMG = "/manus-storage/old_town_night_47c680c5.jpg";
@@ -269,36 +281,86 @@ export default function Home() {
 
       {/* ── Property ── */}
       <Section id="property">
-        <SectionHeading icon={HomeIcon} title="Your Home" subtitle="A spacious, well-appointed retreat in the heart of Cottonwood — everything you need to settle in and explore." />
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <img src={PROPERTY_IMG} alt="Property exterior" className="rounded-2xl shadow-lg w-full h-72 object-cover" />
+        <SectionHeading icon={HomeIcon} title="Your Home" subtitle="A sophisticated desert retreat in the Mingus Foothills — mountain views, hot tub, fire pit, and everything you need to feel right at home." />
+
+        {/* Photo gallery grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-10 rounded-2xl overflow-hidden">
+          <div className="col-span-2 row-span-2">
+            <img src={EXTERIOR_IMG} alt="Cottonwood Casa exterior" className="w-full h-full object-cover" style={{minHeight: '280px'}} />
           </div>
+          <img src={LIVING_ROOM_IMG} alt="Living room" className="w-full h-36 object-cover" />
+          <img src={BEDROOM_IMG} alt="Primary bedroom" className="w-full h-36 object-cover" />
+          <img src={DINING_IMG} alt="Dining area" className="w-full h-36 object-cover" />
+          <img src={ENTRANCE_IMG} alt="Front entrance" className="w-full h-36 object-cover" />
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-10 items-start">
           <div>
-            <h2 className="font-display text-3xl font-bold text-foreground mb-4">609 W Fir Street</h2>
+            <h2 className="font-display text-3xl font-bold text-foreground mb-2">Mountain Views | Hot Tub | Fire Pit</h2>
+            <p className="font-body text-sm text-terracotta font-bold uppercase tracking-widest mb-4">Cottonwood Casa · 609 W Fir Street</p>
             <p className="font-body text-muted-foreground leading-relaxed mb-6">
-              Welcome to your home in Cottonwood! This spacious 4-bedroom, 4-bathroom property offers 3,164 sq ft of comfortable living space — perfect for families or groups. Located just minutes from Old Town Cottonwood's walkable wine tasting rooms, restaurants, and antique shops.
+              A spacious desert home that feels as good as it looks. Wide-plank floors, linen drapes catching the Arizona light, and a dining room anchored beneath a sculptural chandelier. Sweeping Sedona red rock and Mingus Mountain views from your door. Soak in the hot tub (seats 6), gather around the fire pit (seats 8), or unwind across multiple living areas designed with high-end MCM furnishings.
             </p>
-            <div className="grid grid-cols-2 gap-4 mb-6">
+            <div className="grid grid-cols-3 gap-3 mb-6">
               {[
-                { label: "Bedrooms", value: "4" },
-                { label: "Bathrooms", value: "4" },
-                { label: "Square Feet", value: "3,164" },
-                { label: "To Old Town", value: "~5 min drive" },
-                { label: "To Sedona", value: "~20 min drive" },
-                { label: "To Jerome", value: "~20 min drive" },
+                { label: "Bedrooms", value: "3" },
+                { label: "Bathrooms", value: "2.5" },
+                { label: "Max Guests", value: "8" },
+                { label: "To Old Town", value: "~5 min" },
+                { label: "To Sedona", value: "~20 min" },
+                { label: "To Jerome", value: "~15 min" },
               ].map(({ label, value }) => (
-                <div key={label} className="bg-sand rounded-lg p-3">
+                <div key={label} className="bg-sand rounded-lg p-3 text-center">
                   <p className="font-body text-xs text-muted-foreground uppercase tracking-wide">{label}</p>
                   <p className="font-display text-lg font-semibold text-foreground">{value}</p>
                 </div>
               ))}
             </div>
-            <div className="bg-terracotta/5 border border-terracotta/20 rounded-xl p-4">
+            <div className="bg-terracotta/5 border border-terracotta/20 rounded-xl p-4 space-y-2">
               <p className="font-body text-sm text-foreground">
-                <strong className="text-terracotta">WiFi Password:</strong> Ask your host for details upon check-in. <br />
+                <strong className="text-terracotta">WiFi Network:</strong> FirStreet_WiFi
+              </p>
+              <p className="font-body text-sm text-foreground">
+                <strong className="text-terracotta">WiFi Password:</strong> 5ir$treet
+              </p>
+              <p className="font-body text-sm text-foreground">
                 <strong className="text-terracotta">Check-in:</strong> 3:00 PM · <strong className="text-terracotta">Check-out:</strong> 11:00 AM
               </p>
+              <p className="font-body text-sm text-foreground">
+                <strong className="text-terracotta">Entry:</strong> Self check-in via smartlock — code sent 24 hrs before arrival
+              </p>
+            </div>
+          </div>
+          <div className="space-y-4">
+            <h3 className="font-display text-xl font-semibold text-foreground">Inside the Casa</h3>
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <img src={KITCHEN_IMG} alt="Kitchen" className="w-full h-36 object-cover rounded-xl mb-1" />
+                <p className="font-body text-xs text-muted-foreground text-center">Fully stocked kitchen</p>
+              </div>
+              <div>
+                <img src={BEDROOM2_IMG} alt="Bedroom 2" className="w-full h-36 object-cover rounded-xl mb-1" />
+                <p className="font-body text-xs text-muted-foreground text-center">Queen bedroom</p>
+              </div>
+              <div>
+                <img src={WORKSPACE_IMG} alt="Workspace" className="w-full h-36 object-cover rounded-xl mb-1" />
+                <p className="font-body text-xs text-muted-foreground text-center">Dedicated workspace</p>
+              </div>
+              <div>
+                <img src={HOT_TUB_IMG} alt="Hot tub" className="w-full h-36 object-cover rounded-xl mb-1" />
+                <p className="font-body text-xs text-muted-foreground text-center">Hot tub (seats 6)</p>
+              </div>
+            </div>
+            <div className="bg-white rounded-xl border border-border p-4">
+              <p className="font-body text-xs font-bold text-terracotta uppercase tracking-wide mb-2">Amenities Highlights</p>
+              <div className="grid grid-cols-2 gap-1">
+                {["Hot tub (seats 6)","Fire pit (seats 8)","Mountain & desert views","Dedicated workspace","Smart TVs + blackout curtains","Fully stocked kitchen","Free parking (2 spots)","Pet friendly","Self check-in","High-speed WiFi","Drip coffee maker","Multiple living areas"].map(a => (
+                  <div key={a} className="flex items-center gap-1.5">
+                    <div className="w-1.5 h-1.5 rounded-full bg-terracotta flex-shrink-0" />
+                    <span className="font-body text-xs text-muted-foreground">{a}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -427,8 +489,12 @@ export default function Home() {
       <Section id="outdoors" className="bg-sand">
         <SectionHeading icon={Mountain} title="Outdoors" subtitle="The Verde Valley is your playground — hiking, kayaking, birding, and stargazing await." />
         <div className="grid md:grid-cols-2 gap-10 items-center mb-12">
-          <div>
-            <img src={DEAD_HORSE_IMG} alt="Dead Horse Ranch State Park" className="rounded-2xl shadow-lg w-full h-72 object-cover" />
+          <div className="space-y-2">
+            <img src={DEAD_HORSE_IMG} alt="Dead Horse Ranch State Park" className="rounded-2xl shadow-lg w-full h-56 object-cover" />
+            <div className="grid grid-cols-2 gap-2">
+              <img src={OUTDOOR_IMG} alt="Outdoor area" className="rounded-xl w-full h-32 object-cover" />
+              <img src={LIVING2_IMG} alt="Property outdoor living" className="rounded-xl w-full h-32 object-cover" />
+            </div>
           </div>
           <div>
             <h3 className="font-display text-2xl font-bold text-foreground mb-3">Dead Horse Ranch State Park</h3>
