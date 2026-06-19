@@ -7,29 +7,29 @@ import {
 
 /* ─── Asset URLs ─────────────────────────────────────────────────────────── */
 // Real Airbnb property photos
-const EXTERIOR_IMG = "/manus-storage/exterior_9ac9e552.jpg";
-const LIVING_ROOM_IMG = "/manus-storage/living_room_3aaec81d.jpg";
-const BEDROOM_IMG = "/manus-storage/bedroom_e2a7de55.jpg";
-const DINING_IMG = "/manus-storage/dining_e9384102.jpg";
-const ENTRANCE_IMG = "/manus-storage/entrance_b5500a70.jpg";
-const KITCHEN_IMG = "/manus-storage/kitchen_956ac5c0.jpg";
-const BEDROOM2_IMG = "/manus-storage/bedroom2_bb045380.jpg";
-const WORKSPACE_IMG = "/manus-storage/workspace_12b84bc8.jpg";
-const OUTDOOR_IMG = "/manus-storage/outdoor_8ea36dae.jpg";
-const HOT_TUB_IMG = "/manus-storage/hot_tub_eb7610e0.jpg";
-const LIVING2_IMG = "/manus-storage/living2_bd04710b.jpg";
+const EXTERIOR_IMG = "/images/Photo_20260614015645_540ccb69-b174-41c8-9788-957ca829f986.jpg";
+const LIVING_ROOM_IMG = "/images/Photo_20260613232757_a07f6a05-18cd-4150-a266-48d2a6749789.jpg";
+const BEDROOM_IMG = "/images/Photo_20260607192651_34d8c326-53c2-4a78-953f-5e93a36138dc.jpg";
+const DINING_IMG = "/images/Photo_20260614000611_4dfeba9b-a4b7-447a-aab3-fb2b8e86aed4.jpg";
+const ENTRANCE_IMG = "/images/Photo_20260613234705_59dc0fef-5ae4-4fcf-813a-dbd63c4899cd.jpg";
+const KITCHEN_IMG = "/images/Photo_20260607225015_f7fc440e-0474-4017-94ae-b3197389ca61.jpg";
+const BEDROOM2_IMG = "/images/Photo_20260607222544_b646d956-cd01-4e4c-8eee-130cf2c0ccb8.jpg";
+const WORKSPACE_IMG = "/images/Photo_20260607193200_9888a411-a417-4ecd-b6ae-2b9a62e37a05.jpg";
+const OUTDOOR_IMG = "/images/Photo_20260607154835_ccaa59fb-a87b-4d76-9245-452e2eb240fd.jpg";
+const HOT_TUB_IMG = "/images/Photo_20260607154835_ccaa59fb-a87b-4d76-9245-452e2eb240fd.jpg";
+const LIVING2_IMG = "/images/Photo_20260607154835_ccaa59fb-a87b-4d76-9245-452e2eb240fd.jpg";
 // AI-generated hero & area images
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/hero_cottonwood-ngDTPLCBpsJZ9HWGrPnM7i.webp";
 const WINE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/wine_hero-nyov3UfMdGjvNJb66jU2g7.webp";
-const LOGO_IMG = "/manus-storage/grapevine_logo_6db8a5da.webp";
-const PARKING_IMG = "/manus-storage/parking_diagram_b9fe7adb.webp";
+const LOGO_IMG = "/images/Grapevine_Logo.png";
+const PARKING_IMG = "/images/609_Cottonwood_Parking_Noaddress_Final2.png";
 const JEROME_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/jerome_hero-jXuxaBZ3VYDRKtoG9RjTFA.webp";
-const OLD_TOWN_IMG = "/manus-storage/old_town_night_47c680c5.jpg";
-const VERDE_VINEYARD_IMG = "/manus-storage/verde_valley_vineyard_fcf1d2e5.jpg";
-const SEDONA_IMG = "/manus-storage/sedona_cathedral_rock_7280bf25.jpg";
-const DEAD_HORSE_IMG = "/manus-storage/dead_horse_ranch_155732db.jpg";
-const TUZIGOOT_IMG = "/manus-storage/tuzigoot_cc0d43ae.jpg";
-const RAILROAD_IMG = "/manus-storage/verde_canyon_railroad_4276cd21.webp";
+const OLD_TOWN_IMG = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Commercial_Historic_District_%28Cottonwood%2C_Arizona%29.jpg/1280px-Commercial_Historic_District_%28Cottonwood%2C_Arizona%29.jpg";
+const VERDE_VINEYARD_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/wine_hero-nyov3UfMdGjvNJb66jU2g7.webp";
+const SEDONA_IMG = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Cathedral_Rock_-_Sedona_AZ-1.jpg/1280px-Cathedral_Rock_-_Sedona_AZ-1.jpg";
+const DEAD_HORSE_IMG = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Dead_Horse_Ranch.jpg/1280px-Dead_Horse_Ranch.jpg";
+const TUZIGOOT_IMG = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Tuzigoot_December_2013_1.JPG/1280px-Tuzigoot_December_2013_1.JPG";
+const RAILROAD_IMG = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Verde_Canyon_FP7_2025.jpg/1280px-Verde_Canyon_FP7_2025.jpg";
 
 /* ─── Nav sections ───────────────────────────────────────────────────────── */
 const NAV_ITEMS = [
@@ -334,7 +334,7 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-3">
               <div>
                 <img src={KITCHEN_IMG} alt="Kitchen" className="w-full h-36 object-cover rounded-xl mb-1" />
-                <p className="font-body text-xs text-muted-foreground text-center">Fully stocked kitchen</p>
+                <p className="font-body text-xs text-muted-foreground text-center">Third bedroom (bunks)</p>
               </div>
               <div>
                 <img src={BEDROOM2_IMG} alt="Bedroom 2" className="w-full h-36 object-cover rounded-xl mb-1" />
@@ -618,7 +618,7 @@ export default function Home() {
             </a>
           </div>
           <div className="order-1 md:order-2">
-            <img src="/manus-storage/old_town_night_47c680c5.jpg" alt="Old Town Cottonwood at night" className="rounded-2xl shadow-lg w-full h-96 object-cover" />
+            <img src={OLD_TOWN_IMG}"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Commercial_Historic_District_%28Cottonwood%2C_Arizona%29.jpg/1280px-Commercial_Historic_District_%28Cottonwood%2C_Arizona%29.jpg" alt="Old Town Cottonwood at night" className="rounded-2xl shadow-lg w-full h-96 object-cover" />
             <p className="font-body text-xs text-muted-foreground text-center mt-2 italic">Old Town Cottonwood — vibrant by day and night</p>
           </div>
         </div>
