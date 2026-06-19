@@ -443,20 +443,36 @@ export default function Home() {
       {/* ── Day Trips ── */}
       <Section id="daytrips" className="bg-cream">
         <SectionHeading icon={MapPin} title="Day Trips" subtitle="Sedona, Jerome, and beyond — world-class destinations are all within 30 minutes of your front door." />
+
+        {/* Sedona insider tips callout */}
+        <div className="mb-8 bg-terracotta/8 border border-terracotta/20 rounded-2xl p-5">
+          <div className="flex items-start gap-3">
+            <div className="w-8 h-8 rounded-full bg-terracotta/15 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <Star size={15} className="text-terracotta" />
+            </div>
+            <div>
+              <h4 className="font-display text-base font-semibold text-foreground mb-1">Sedona Insider Tips</h4>
+              <p className="font-body text-sm text-muted-foreground leading-relaxed">
+                <strong>Slide Rock &amp; Crescent Moon:</strong> Go early morning or after 2pm in summer — entry lines can be long mid-day. Creek areas can be slippery and some pools are deeper than they look; extra caution for children and non-swimmers. For shade and creek access, hike the <strong>West Fork Trail</strong> in Oak Creek Canyon. Drive scenic <strong>State Route 89A</strong> toward Flagstaff for roadside picnic pull-offs along the creek. For sunset and stargazing, the <strong>Sedona Airport Overlook</strong> offers panoramic red-rock views and some of the darkest skies in Arizona — the Milky Way is visible on clear nights. Download the <strong>AllTrails app</strong> before you go for trail details, difficulty ratings, and real-time closure status.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <AttractionCard
             img={SEDONA_IMG}
             title="Sedona Red Rocks"
             distance="~20 min"
-            description="One of the most photographed landscapes on Earth. Hike Cathedral Rock, Bell Rock, or Devil's Bridge. Explore the vortex sites, art galleries, and world-class spas of this iconic Arizona town."
-            tags={["Hiking", "Vortex Sites", "Galleries", "Spas"]}
+            description="One of the most photographed landscapes on Earth. Hike Cathedral Rock, Bell Rock, or Devil's Bridge. Explore vortex sites, art galleries, and world-class spas. The Sedona Airport Overlook is the best spot for sunset and Milky Way stargazing on clear nights."
+            tags={["Hiking", "Vortex Sites", "Galleries", "Stargazing"]}
             link="https://visitsedona.com"
           />
           <AttractionCard
             img={JEROME_IMG}
             title="Jerome Ghost Town"
             distance="~20 min"
-            description="Perched dramatically on Cleopatra Hill at 5,000 ft, Jerome was once Arizona's wildest copper mining town. Today it's a vibrant arts community with galleries, restaurants, ghost tours, and stunning valley views."
+            description="Perched on Cleopatra Hill at 5,000 ft, Jerome was Arizona's wildest copper mining town — largely abandoned when the mines closed, then reborn as a quirky arts community. Don't miss the Jerome Grand Hotel (The Asylum restaurant), the Haunted Hamburger, cobblestone shops, and the Hang Glider Launch overlook for sunset views."
             tags={["Ghost Town", "Art Galleries", "Ghost Tours", "Views"]}
             link="https://www.visitarizona.com/places/cities/jerome"
           />
@@ -491,6 +507,30 @@ export default function Home() {
             description="Stroll the historic Main Street lined with wine tasting rooms, farm-to-table restaurants, boutique shops, and antique stores. The walkable heart of the Verde Valley's social scene."
             tags={["Wine Tasting", "Dining", "Shopping", "Walkable"]}
             link="https://www.oldtown.org"
+          />
+          <AttractionCard
+            img={SEDONA_IMG}
+            title="Chapel of the Holy Cross"
+            distance="~25 min"
+            description="An architectural marvel built directly into Sedona's red rocks, the Chapel of the Holy Cross offers not only spiritual solace but sweeping panoramic views of the surrounding canyon landscape. Free entry, open daily."
+            tags={["Landmark", "Views", "Architecture", "Free Entry"]}
+            link="https://www.chapeloftheholycross.com"
+          />
+          <AttractionCard
+            img={JEROME_IMG}
+            title="Tlaquepaque Arts Village"
+            distance="~25 min"
+            description="A charming Sedona shopping village modeled on a traditional Mexican village, with art galleries, boutiques, and restaurants. Perfect for finding a unique souvenir or enjoying a leisurely afternoon among fountains and archways."
+            tags={["Art Galleries", "Shopping", "Restaurants", "Culture"]}
+            link="https://www.tlaq.com"
+          />
+          <AttractionCard
+            img={DEAD_HORSE_IMG}
+            title="Blazin' M Ranch"
+            distance="~5 min"
+            description="A beloved Cottonwood institution for family fun — enjoy a chuckwagon dinner, live Western entertainment, games, and activities in a classic Arizona ranch setting. A great evening out for all ages."
+            tags={["Family Fun", "Western Entertainment", "Dinner Show"]}
+            link="https://blazinm.com"
           />
         </div>
       </Section>
@@ -534,10 +574,10 @@ export default function Home() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {[
-            { icon: Droplets, title: "Verde River Kayaking", body: "Guided kayak tours available from Cottonwood. Drift through canyon walls and native wildlife corridors on Arizona's most scenic river." },
-            { icon: Mountain, title: "Hiking Trails", body: "The Jail Trail River Walk, Bob Bear Trail, and Coconino National Forest trails offer everything from gentle strolls to challenging climbs." },
-            { icon: Star, title: "Stargazing", body: "Cottonwood's high desert elevation and low light pollution make it a premier stargazing destination. The Verde Canyon Railroad even runs Saturday Starlight Adventures." },
-            { icon: Train, title: "Verde Canyon Railroad", body: "A 4-hour round-trip scenic train ride through the untouched Verde Canyon — bald eagles, ancient ruins, and 734-ft tunnel. Departs from Clarkdale." },
+            { icon: Droplets, title: "Verde River Kayaking", body: "Guided kayak tours available from Cottonwood. Drift through canyon walls and native wildlife corridors on Arizona's most scenic river. Canoe and kayak rentals also available at Dead Horse Ranch State Park." },
+            { icon: Mountain, title: "Local Hikes", body: "Easy strolls: Jail Trail River Walk (near Old Town) and Cliff Rose Trail off Mingus Ave. For adventure: Parsons Trail and The Crack are stunning but strenuous — bring extra water and start early in summer." },
+            { icon: Star, title: "Stargazing", body: "Cottonwood's high desert elevation and low light pollution make it a premier stargazing destination. The Verde Canyon Railroad runs Saturday Starlight Adventures, and the Sedona Airport Overlook is spectacular on clear nights." },
+            { icon: Train, title: "Verde Canyon Railroad", body: "A 4-hour round-trip scenic train ride through the untouched Verde Canyon — bald eagles, ancient ruins, and 734-ft tunnel. Departs from Clarkdale. Book early; seasonal events sell out weeks in advance." },
           ].map(tip => <TipCard key={tip.title} {...tip} />)}
         </div>
       </Section>
@@ -621,12 +661,12 @@ export default function Home() {
         <SectionHeading icon={Star} title="Guest Tips" subtitle="Everything you need to know to make the most of your stay in the Verde Valley." />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
           {[
-            { icon: Wine, title: "Sip & Stroll Events", body: "Old Town hosts regular Sip & Stroll events where you can sample wines from multiple tasting rooms with a single ticket. Check oldtown.org/events for the current schedule." },
-            { icon: MapPin, title: "Getting Around", body: "A car is recommended for day trips to Sedona and Jerome. Old Town Cottonwood is very walkable — most tasting rooms and restaurants are within a 5-minute stroll of each other." },
-            { icon: Mountain, title: "Best Time to Visit", body: "Spring (March–May) and Fall (September–November) offer the most comfortable temperatures. Summers are warm but evenings cool down beautifully at Cottonwood's 3,300 ft elevation." },
-            { icon: Landmark, title: "National Parks Pass", body: "If you plan to visit Tuzigoot and Montezuma Castle, consider an America the Beautiful Annual Pass ($80) — it covers all NPS sites and pays for itself quickly." },
-            { icon: Train, title: "Book the Railroad Early", body: "Verde Canyon Railroad tickets sell out weeks in advance, especially for seasonal events like the Christmas Journey and Uncorked Wine Festival. Book at verdecanyonrr.com." },
-            { icon: Phone, title: "Emergency Contacts", body: "Cottonwood Police: 928-634-4246 · Verde Valley Medical Center: 928-639-6000 · Nearest urgent care: 549 S Main St, Cottonwood." },
+            { icon: Wine, title: "Sip & Stroll Events", body: "Old Town hosts regular Sip & Stroll events where you can sample wines from multiple tasting rooms with a single ticket. Check oldtown.org/events for the current schedule. Page Springs Cellars opens at noon — arrive early on weekends to avoid a wait." },
+            { icon: MapPin, title: "Getting Around", body: "A car is recommended for day trips to Sedona and Jerome. Old Town Cottonwood is very walkable — most tasting rooms and restaurants are within a 5-minute stroll. Download the AllTrails app before hiking for trail details, difficulty ratings, and real-time closure status." },
+            { icon: Mountain, title: "Best Time to Visit", body: "Spring (March–May) and Fall (September–November) offer the most comfortable temperatures. Summers are warm but evenings cool down beautifully at Cottonwood's 3,300 ft elevation. For strenuous hikes like Parsons Trail or The Crack, start early and bring extra water in summer." },
+            { icon: Landmark, title: "National Parks Pass", body: "If you plan to visit Tuzigoot and Montezuma Castle, consider an America the Beautiful Annual Pass ($80) — it covers all NPS sites and pays for itself quickly. Fossil Creek requires a free permit (recreation.gov) — book well in advance." },
+            { icon: Train, title: "Book the Railroad Early", body: "Verde Canyon Railroad tickets sell out weeks in advance, especially for seasonal events like the Christmas Journey and Uncorked Wine Festival. Book at verdecanyonrr.com. Saturday Starlight Adventures are especially popular." },
+            { icon: Phone, title: "Emergency Contacts", body: "Cottonwood Police: 928-634-4246 · Verde Valley Medical Center: 928-639-6000 · Nearest urgent care: 549 S Main St, Cottonwood. Wildlife note: coyotes, javelina, and rattlesnakes are present in the area — keep a respectful distance." },
           ].map(tip => <TipCard key={tip.title} {...tip} />)}
         </div>
 
