@@ -34,7 +34,13 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: pnpm vite build --base=/
+        run: pnpm vite build --base=/cottonwood-guide/
+
+      - name: Mirror build for GitHub Pages project-page subpath
+        run: |
+          cp -r dist/public /tmp/site-copy
+          mkdir -p dist/public/cottonwood-guide
+          cp -r /tmp/site-copy/. dist/public/cottonwood-guide/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
