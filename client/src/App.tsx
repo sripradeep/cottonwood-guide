@@ -9,7 +9,7 @@ import Casita from "./pages/Casita";
 
 function AppRouter() {
   return (
-    <Router base="/cottonwood-guide">
+    <Router>
       <Switch>
         <Route path={"/"} component={Home} />
           <Route path={"/1casita"} component={Casita} />
