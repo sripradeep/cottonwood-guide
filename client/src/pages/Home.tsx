@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 
 /* ─── Asset URLs ─────────────────────────────────────────────────────────── */
-const P = "/"; // Vite base URL (/cottonwood-guide/ in prod)
+const P = (typeof window !== "undefined" && window.location.hostname.endsWith(".github.io")) ? "/cottonwood-guide/" : "/"; // Vite base URL (/cottonwood-guide/ in prod)
 // Real Airbnb property photos
 const EXTERIOR_IMG = P + "images/Photo_20260614015645_540ccb69-b174-41c8-9788-957ca829f986.jpg";
 const LIVING_ROOM_IMG = P + "images/Photo_20260613232757_a07f6a05-18cd-4150-a266-48d2a6749789.jpg";
