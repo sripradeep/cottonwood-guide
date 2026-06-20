@@ -8,8 +8,9 @@ import Home from "./pages/Home";
 import Casita from "./pages/Casita";
 
 function AppRouter() {
+  const routerBase = typeof window !== "undefined" && window.location.hostname.endsWith(".github.io") ? "/cottonwood-guide" : "";
   return (
-    <Router>
+    <Router base={routerBase}>
       <Switch>
         <Route path={"/"} component={Home} />
           <Route path={"/1casita"} component={Casita} />
