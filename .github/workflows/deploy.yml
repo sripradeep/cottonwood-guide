@@ -34,7 +34,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: pnpm vite build --base=/cottonwood-guide/
+        run: pnpm vite build --base=/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
