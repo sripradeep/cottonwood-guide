@@ -17,7 +17,7 @@ const KITCHEN_IMG = P + "images/Photo_20260607225015_f7fc440e-0474-4017-94ae-b31
 const BEDROOM2_IMG = P + "images/Photo_20260607222544_b646d956-cd01-4e4c-8eee-130cf2c0ccb8.jpg";
 const WORKSPACE_IMG = P + "images/Photo_20260607193200_9888a411-a417-4ecd-b6ae-2b9a62e37a05.jpg";
 const OUTDOOR_IMG = P + "images/Photo_20260607154835_ccaa59fb-a87b-4d76-9245-452e2eb240fd.jpg";
-const HOT_TUB_IMG = P + "images/Photo_20260607154835_ccaa59fb-a87b-4d76-9245-452e2eb240fd.jpg";
+const HOT_TUB_IMG = P + "images/PXL_20260621_031917295.NIGHT.jpg";
 const LIVING2_IMG = P + "images/Photo_20260607154835_ccaa59fb-a87b-4d76-9245-452e2eb240fd.jpg";
 // AI-generated hero & area images
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/hero_cottonwood-ngDTPLCBpsJZ9HWGrPnM7i.webp";
