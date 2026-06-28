@@ -15,7 +15,7 @@ function AppRouter() {
         <Route path={"/"}>
           <Redirect to="/1casa" />
         </Route>
-        <Route path={"/1casa"} component={Casita} />
+        <Route path={"/1casa"} component={Home} />
         <Route path={"/1casita"} component={Casita} />
         <Route path={"/404"} component={NotFound} />
         <Route component={NotFound} />
