@@ -31,6 +31,8 @@ const SEDONA_IMG = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Ca
 const DEAD_HORSE_IMG = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Dead_Horse_Ranch.jpg/1280px-Dead_Horse_Ranch.jpg";
 const TUZIGOOT_IMG = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Tuzigoot_December_2013_1.JPG/1280px-Tuzigoot_December_2013_1.JPG";
 const RAILROAD_IMG = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Verde_Canyon_FP7_2025.jpg/1280px-Verde_Canyon_FP7_2025.jpg";
+const BLAZINRANCH_IMG = "images/BlazinMranch.jpg";
+const TLAQUPAQUE_IMG = "images/tlaquepaque.jpg";
 
 /* ─── Nav sections ───────────────────────────────────────────────────────── */
 const NAV_ITEMS = [
@@ -518,7 +520,7 @@ export default function Home() {
             link="https://www.chapeloftheholycross.com"
           />
           <AttractionCard
-            img={JEROME_IMG}
+            img={TLAQUPAQUE_IMG}
             title="Tlaquepaque Arts Village"
             distance="~25 min"
             description="A charming Sedona shopping village modeled on a traditional Mexican village, with art galleries, boutiques, and restaurants. Perfect for finding a unique souvenir or enjoying a leisurely afternoon among fountains and archways."
@@ -526,7 +528,7 @@ export default function Home() {
             link="https://www.tlaq.com"
           />
           <AttractionCard
-            img={DEAD_HORSE_IMG}
+            img={BLAZINRANCH_IMG}
             title="Blazin' M Ranch"
             distance="~5 min"
             description="A beloved Cottonwood institution for family fun — enjoy a chuckwagon dinner, live Western entertainment, games, and activities in a classic Arizona ranch setting. A great evening out for all ages."
