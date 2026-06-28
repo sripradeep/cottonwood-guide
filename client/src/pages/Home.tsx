@@ -542,10 +542,10 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-10 items-center mb-12">
           <div className="space-y-2">
             <img src={DEAD_HORSE_IMG} alt="Dead Horse Ranch State Park" className="rounded-2xl shadow-lg w-full h-56 object-cover" />
-            <div className="grid grid-cols-2 gap-2">
+            {/*<div className="grid grid-cols-2 gap-2">
               <img src={OUTDOOR_IMG} alt="Outdoor area" className="rounded-xl w-full h-32 object-cover" />
               <img src={LIVING2_IMG} alt="Property outdoor living" className="rounded-xl w-full h-32 object-cover" />
-            </div>
+            </div>*/}
           </div>
           <div>
             <h3 className="font-display text-2xl font-bold text-foreground mb-3">Dead Horse Ranch State Park</h3>
