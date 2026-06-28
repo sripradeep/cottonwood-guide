@@ -22,7 +22,7 @@ const LIVING2_IMG = P + "images/Photo_20260607154835_ccaa59fb-a87b-4d76-9245-452
 // AI-generated hero & area images
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/hero_cottonwood-ngDTPLCBpsJZ9HWGrPnM7i.webp";
 const WINE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/wine_hero-nyov3UfMdGjvNJb66jU2g7.webp";
-const LOGO_IMG = P + "images/Grapevine_Logo.png";
+const LOGO_IMG = P + "images/Grapevine_Dark_Logo.png";
 const PARKING_IMG = P + "images/609_Cottonwood_Parking_Noaddress_Final2.png";
 const JEROME_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317602054/2iWiJ59KVFa8fT2GJNUXDF/jerome_hero-jXuxaBZ3VYDRKtoG9RjTFA.webp";
 const OLD_TOWN_IMG = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Commercial_Historic_District_%28Cottonwood%2C_Arizona%29.jpg/1280px-Commercial_Historic_District_%28Cottonwood%2C_Arizona%29.jpg";
