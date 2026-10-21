@@ -325,7 +325,7 @@ export default function Home() {
                 <strong className="text-terracotta">WiFi Password:</strong> 5ir$treet
               </p>
               <p className="font-body text-sm text-foreground">
-                <strong className="text-terracotta">Check-in:</strong> 3:00 PM · <strong className="text-terracotta">Check-out:</strong> 11:00 AM
+                <strong className="text-terracotta">Check-in:</strong> 4:00 PM · <strong className="text-terracotta">Check-out:</strong> 11:00 AM
               </p>
               <p className="font-body text-sm text-foreground">
                 <strong className="text-terracotta">Entry:</strong> Self check-in via smartlock — code sent 24 hrs before arrival
